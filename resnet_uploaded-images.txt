@@ -1,0 +1,79 @@
+
+Pet Image Label Dictionary has 5 key-value pairs.
+Below are 5 of them:
+ 1 key:        Golden_retriever_01.jpg  label:           golden retriever
+ 2 key:                  Oocyte_01.jpg  label:                     oocyte
+ 3 key:                     Cat_01.jpg  label:                        cat
+ 4 key:        Golden_retriever_02.jpg  label:           golden retriever
+ 5 key:               Imaginary_01.jpg  label:                  imaginary
+
+     MATCH:
+
+       Golden_retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat
+
+ NOT A MATCH:
+
+                 Oocyte_01.jpg: 
+Real:                     oocyte   Classifier: nematode, nematode worm, roundworm
+
+       Golden_retriever_02.jpg: 
+Real:           golden retriever   Classifier:      siamese cat, siamese, cat
+
+              Imaginary_01.jpg: 
+Real:                  imaginary   Classifier:                          zebra
+
+# Total Images 5 # Matches: 2 # NOT Matches: 3
+
+     MATCH:
+
+       Golden_retriever_01.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                 Oocyte_01.jpg: 
+Real:                     oocyte   Classifier: nematode, nematode worm, roundworm  
+PetLabelDog: 0  ClassLabelDog: 0
+
+       Golden_retriever_02.jpg: 
+Real:           golden retriever   Classifier:      siamese cat, siamese, cat  
+PetLabelDog: 1  ClassLabelDog: 0
+
+              Imaginary_01.jpg: 
+Real:                  imaginary   Classifier:                          zebra  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 5 # Matches: 2 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  5  N Dog Images:  2  N NotDog Images:  3 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  5  N Dog Images:  2  N NotDog Images:  3 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   5
+N Dog Images        :   2
+N Not-Dog Images:   3
+Summary statistics (percentages) on Model Run
+pct_match           : 40.00
+pct_correct_dogs    : 50.00
+pct_correct_breed   : 50.00
+pct_correct_notdogs : 100.00
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:           golden retriever   Classifier:      siamese cat, siamese, cat
+
+** Total Elapsed Runtime: 0:0:14
