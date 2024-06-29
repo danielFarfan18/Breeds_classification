@@ -24,5 +24,7 @@ To classify images from a single run, use the following command:
 
 ## Batch Execution
 For batch execution, run the following script:
-This script will automate the process of running multiple classifications in batches.
+
 ```sh run_models_batch.sh```
+
+This script will automate the process of running multiple classifications in batches.
