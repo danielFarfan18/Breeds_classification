@@ -11,3 +11,19 @@ Technical Details:
 
 Utilized convolutional neural networks (CNNs), specifically AlexNet, VGG, and ResNet architectures, pre-trained on the ImageNet dataset.
 Applied a provided classifier function to classify images, ensuring accurate breed identification, even for breeds with similar appearances.
+
+# Running the Project
+## Single Run
+To classify images from a single run, use the following command:
+
+bash
+'''python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt'''
+--dir: The directory containing the images to classify.
+--arch: The CNN architecture to use (vgg, alexnet, or resnet).
+--dogfile: The file containing the list of dog names.
+
+## Batch Execution
+For batch execution, run the following script:
+This script will automate the process of running multiple classifications in batches.
+'''sh run_models_batch.sh
+'''
