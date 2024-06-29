@@ -17,7 +17,8 @@ Applied a provided classifier function to classify images, ensuring accurate bre
 To classify images from a single run, use the following command:
 
 bash
-'''python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt'''
+```python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt```
+
 --dir: The directory containing the images to classify.
 --arch: The CNN architecture to use (vgg, alexnet, or resnet).
 --dogfile: The file containing the list of dog names.
@@ -25,5 +26,5 @@ bash
 ## Batch Execution
 For batch execution, run the following script:
 This script will automate the process of running multiple classifications in batches.
-'''sh run_models_batch.sh
-'''
+```sh run_models_batch.sh
+```
